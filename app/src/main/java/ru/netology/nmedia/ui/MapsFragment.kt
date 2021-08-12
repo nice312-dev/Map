@@ -73,13 +73,6 @@ class MapsFragment : Fragment() {
 
         loadMarkers()
 
-//        googleMap.awaitAnimateCamera(
-//                CameraUpdateFactory.newCameraPosition(
-//                    cameraPosition {
-//                        target(showCurre)
-//                        zoom(15F)
-//                    }
-//                ))
 
         lifecycle.coroutineScope.launchWhenCreated {
 
@@ -179,51 +172,6 @@ class MapsFragment : Fragment() {
             }
 
 
-//            val target = LatLng(55.751999, 37.617734)
-//            val markerManager = MarkerManager(googleMap)
-//            val collection: MarkerManager.Collection = markerManager.newCollection().apply {
-//                addMarker {
-//                    position(target)
-//                    icon(getDrawable(requireContext(), R.drawable.ic_netology_48dp)!!)
-//                    title("The Moscow Kremlin")
-//                }.apply {
-//                    tag = "Any additional data"  //Any
-//                }
-//            }
-//            collection.setOnMarkerClickListener { marker ->
-//                // TODO: work with marker
-//                Toast.makeText(
-//                    requireContext(),
-//                    (marker.tag as String),
-//                    Toast.LENGTH_LONG
-//                ).show()
-//                true
-//            }
-
-//            googleMap.setOnMapLongClickListener {
-//                val mark = LatLng(it.latitude, it.longitude)
-//                collection.addMarker {
-//                    position(mark)
-//                    icon(getDrawable(requireContext(), R.drawable.ic_netology_48dp)!!)
-//                    title("test")
-//                }
-//            }
-//            collection.setOnMarkerClickListener { marker ->
-//                marker.showInfoWindow()
-//                val args = Bundle()
-//                args.putString("title", marker.title)
-//                markerInfoBSF.arguments = args
-//                markerInfoBSF.show(childFragmentManager, "test")
-//                true
-//            }
-
-//            googleMap.awaitAnimateCamera(
-//                CameraUpdateFactory.newCameraPosition(
-//                    cameraPosition {
-//                        target(target)
-//                        zoom(15F)
-//                    }
-//                ))
         }
     }
 
